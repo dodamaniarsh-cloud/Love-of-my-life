@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>For Saara ❤️</title>
+
+<!-- CSS LINK -->
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- BACKGROUND MUSIC -->
+<audio id="bgm" loop>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<div class="app">
+
+<!-- WELCOME PAGE -->
+<section class="page active" id="welcome">
+
+<h1>Hey Saara ❤️</h1>
+<p>I made something special for you…</p>
+
+<button onclick="nextPage('memories')">Start 💖</button>
+</section>
+
+
+<!-- MEMORY PAGE -->
+<section class="page" id="memories">
+
+<h2>Our Memories 📸</h2>
+
+<div class="gallery">
+<img src="pic1.jpg" alt="Memory 1">
+<img src="pic2.jpg" alt="Memory 2">
+</div>
+
+<p>Every moment with you is precious 💫</p>
+
+<button onclick="nextPage('teddy')">Next 🧸</button>
+</section>
+
+
+<!-- TEDDY PAGE -->
+<section class="page" id="teddy">
+
+<h2>Virtual Hug 🧸</h2>
+
+<!-- LOCAL IMAGE -->
+<img src="teddy.png" class="teddy" alt="Teddy">
+
+<p id="teddyText">Tap Teddy 🤍</p>
+
+<button onclick="hugTeddy()">Hug 🤗</button><br><br>
+
+<button onclick="nextPage('game')">Play Game 🎮</button>
+</section>
+
+
+<!-- GAME PAGE -->
+<section class="page" id="game">
+
+<h2>Love Quiz 💘</h2>
+
+<p id="question"></p>
+
+<div id="options"></div>
+
+<button onclick="nextPage('letter')">Skip ➡️</button>
+</section>
+
+
+<!-- LOVE LETTER -->
+<section class="page" id="letter">
+
+<h2>For You 💌</h2>
+
+<div class="letter">
+
+Saara ❤️<br><br>
+
+You are my favorite memory,
+my comfort,
+my smile,
+my peace.
+
+No matter what happens,
+you’ll always be special to me 💖
+
+</div>
+
+<button onclick="end()">Finish ✨</button>
+</section>
+
+</div>
+
+
+<!-- JS LINK -->
+<script src="script.js"></script>
+
+</body>
+</html>

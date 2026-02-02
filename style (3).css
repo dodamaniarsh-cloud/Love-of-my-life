@@ -1,0 +1,83 @@
+body{
+margin:0;
+font-family:'Segoe UI',sans-serif;
+background:linear-gradient(#ffe6f0,#fff);
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+}
+
+.app{
+width:360px;
+background:#fff0f5;
+border-radius:25px;
+padding:20px;
+box-shadow:0 0 20px pink;
+text-align:center;
+}
+
+/* PAGES */
+
+.page{
+display:none;
+}
+
+.page.active{
+display:block;
+animation:fade 0.5s;
+}
+
+@keyframes fade{
+from{opacity:0}
+to{opacity:1}
+}
+
+/* BUTTON */
+
+button{
+background:#ff4d79;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:25px;
+font-size:16px;
+margin:10px;
+cursor:pointer;
+}
+
+/* GALLERY */
+
+.gallery img{
+width:140px;
+height:160px;
+border-radius:15px;
+margin:5px;
+object-fit:cover;
+box-shadow:0 0 10px pink;
+}
+
+/* TEDDY */
+
+.teddy{
+width:150px;
+margin:15px;
+}
+
+/* QUIZ */
+
+#options button{
+display:block;
+width:80%;
+margin:8px auto;
+}
+
+/* LETTER */
+
+.letter{
+background:white;
+padding:15px;
+border-radius:15px;
+font-style:italic;
+box-shadow:0 0 10px pink;
+}
